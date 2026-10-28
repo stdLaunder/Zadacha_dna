@@ -16,7 +16,7 @@ function metadata(value: unknown): Record<string, unknown> {
 
 function chapterNumber(value: unknown): number | null {
   const n = typeof value === "number" || typeof value === "string" ? Number(value) : NaN
-  return Number.isInteger(n) && n > 0 ? n : null
+  return Number.isInteger(n) && n >= 0 ? n : null
 }
 
 /**
@@ -54,6 +54,9 @@ const SeriesNavigation: QuartzComponent = ({ fileData, allFiles }: QuartzCompone
   }
 
   chapters.sort((a, b) => a.number - b.number || a.slug.localeCompare(b.slug))
+  const totalFromFrontmatter = chapterNumber(data.seriesTotal)
+  const total = totalFromFrontmatter === null ? chapters.filter((chapter) => chapter.number > 0).length : totalFromFrontmatter
+  const hasAnnouncement = data.seriesHasAnnouncement === true
   const index = chapters.findIndex((item) => item.slug === fileData.slug)
   if (index < 0) return null
 
@@ -77,11 +80,16 @@ const SeriesNavigation: QuartzComponent = ({ fileData, allFiles }: QuartzCompone
           {seriesTitle}
         </a>
         <span class="math-series-nav__counter">
-          Часть {chapters[index].number} из {chapters.length}
+          Часть {chapters[index].number} из {total}
         </span>
       </div>
 
       <ol class="math-series-nav__steps">
+        {hasAnnouncement && !chapters.some((chapter) => chapter.number === 0) && (
+          <li>
+            <span class="math-series-nav__step" title="Анонс готовится" aria-label="Часть 0: анонс готовится">0</span>
+          </li>
+        )}
         {chapters.map((chapter) => (
           <li key={chapter.slug}>
             <a
