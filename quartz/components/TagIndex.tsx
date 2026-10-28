@@ -1,5 +1,6 @@
 import type { QuartzComponent, QuartzComponentProps } from "./types"
 import { resolveRelative, slugTag } from "../util/path"
+import type { FullSlug } from "../util/path"
 
 /**
  * Global tag index, shown in the left sidebar.
@@ -21,7 +22,7 @@ const TagIndex: QuartzComponent = ({ allFiles, fileData }: QuartzComponentProps)
 
   const sortedTags = [...counts.entries()].sort(([a], [b]) => a.localeCompare(b, "ru"))
   const currentSlug = fileData.slug ?? "index"
-  const allTagsUrl = resolveRelative(currentSlug, "tags/index")
+  const allTagsUrl = resolveRelative(currentSlug, "tags/index" as FullSlug)
 
   return (
     <nav class="site-tag-index" aria-label="Навигация по темам и тегам">
@@ -31,7 +32,7 @@ const TagIndex: QuartzComponent = ({ allFiles, fileData }: QuartzComponentProps)
       <ul class="site-tag-index__list">
         {sortedTags.map(([tag, count]) => (
           <li key={tag}>
-            <a class="internal site-tag-index__tag" href={resolveRelative(currentSlug, `tags/${slugTag(tag)}`)}>
+            <a class="internal site-tag-index__tag" href={resolveRelative(currentSlug, `tags/${slugTag(tag)}` as FullSlug)}>
               <span class="site-tag-index__hash" aria-hidden="true">#</span>
               <span class="site-tag-index__name">{tag.replaceAll("-", " ")}</span>
               <span class="site-tag-index__count" aria-label={`Статей: ${count}`}>{count}</span>
