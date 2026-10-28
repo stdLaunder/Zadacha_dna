@@ -1,6 +1,7 @@
 import { PageFrame, PageFrameProps } from "./types"
 import HeaderConstructor from "../Header"
 import TagIndex from "../TagIndex"
+import SeriesNavigation from "../SeriesNavigation"
 
 const Header = HeaderConstructor()
 
@@ -43,7 +44,9 @@ export const DefaultFrame: PageFrame = {
               ))}
             </div>
           </div>
+          <SeriesNavigation {...componentData} />
           <Content {...componentData} />
+          <SeriesNavigation {...componentData} />
           <hr />
           <div class="page-footer">
             {afterBody.map((BodyComponent) => (
