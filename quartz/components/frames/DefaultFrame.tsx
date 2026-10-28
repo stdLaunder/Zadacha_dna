@@ -1,5 +1,6 @@
 import { PageFrame, PageFrameProps } from "./types"
 import HeaderConstructor from "../Header"
+import TagIndex from "../TagIndex"
 
 const Header = HeaderConstructor()
 
@@ -27,6 +28,7 @@ export const DefaultFrame: PageFrame = {
           {left.map((BodyComponent) => (
             <BodyComponent {...componentData} />
           ))}
+          <TagIndex {...componentData} />
         </div>
         <div class="center">
           <div class="page-header">
