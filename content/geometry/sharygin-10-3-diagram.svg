@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="70 146 360 240" role="img" aria-labelledby="title description">
+<title id="title">Схема к задаче 10.3 олимпиады Шарыгина</title>
+<desc id="description">Треугольник ABC с вписанной окружностью. D на BC, E на AC, F на AB — точки касания. AA', BB', CC' пересекаются в точке G; отмечены инцентр I и точка Фейербаха Fe. Пунктиром показана вспомогательная окружность на исходном чертеже.</desc>
+<rect x="70" y="146" width="360" height="240" fill="#fbfaf8"/>
+<g fill="none" stroke-linejoin="round" stroke-linecap="round">
+ <path d="M139 175 L113 363 L395 363 Z" stroke="#646d79" stroke-width="2.5"/>
+ <circle cx="190" cy="295" r="68" stroke="#93949b" stroke-width="2.7"/>
+ <circle cx="164.4" cy="235.8" r="65.8" stroke="#888b94" stroke-width="2.7" stroke-dasharray="8 8"/>
+ <path d="M139 175 L190 363" stroke="#6d7079" stroke-width="2.3"/>
+ <path d="M113 363 L230 241" stroke="#6d7079" stroke-width="2.3"/>
+ <path d="M395 363 L124 286" stroke="#6d7079" stroke-width="2.3"/>
+</g>
+<g fill="#3a8ed1" stroke="#174e8a" stroke-width="1.4">
+ <circle cx="139" cy="175" r="4.9"/><circle cx="113" cy="363" r="4.9"/><circle cx="395" cy="363" r="4.9"/>
+</g>
+<g fill="#81848b" stroke="#404651" stroke-width="1.4">
+ <circle cx="190" cy="363" r="4.5"/><circle cx="230" cy="241" r="4.5"/><circle cx="124" cy="286" r="4.5"/>
+ <circle cx="173" cy="301" r="4.7"/><circle cx="190" cy="295" r="3.6"/><circle cx="156" cy="238" r="4.1"/>
+</g>
+<g font-family="Georgia, 'Times New Roman', serif" font-size="16" paint-order="stroke" stroke="#fbfaf8" stroke-width="3" stroke-linejoin="round">
+ <g fill="#236ca9"><text x="143" y="167">A</text><text x="99" y="356">B</text><text x="399" y="357">C</text></g>
+ <g fill="#555a63"><text x="197" y="361">D</text><text x="235" y="237">E</text><text x="109" y="280">F</text><text x="180" y="314">G</text><text x="196" y="289">I</text><text x="159" y="230">Fe</text></g>
+</g>
+</svg>
