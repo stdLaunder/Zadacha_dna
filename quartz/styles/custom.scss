@@ -119,3 +119,110 @@
   }
   &__overview { white-space: nowrap; }
 }
+
+/* Responsive reading layout: desktop remains unchanged. */
+.site-tag-index-mobile { display: none; }
+
+@media (max-width: 800px) {
+  html, body, #quartz-root {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+
+  .page > #quartz-body {
+    padding-inline: clamp(0.75rem, 4vw, 1.25rem);
+    grid-template-columns: minmax(0, 1fr);
+    column-gap: 0;
+  }
+  .page > #quartz-body > .left.sidebar {
+    width: 100%;
+    min-width: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.65rem;
+    padding-top: 0.85rem;
+    padding-bottom: 0.6rem;
+  }
+  .page > #quartz-body > .left.sidebar > * { min-width: 0; }
+  .page > #quartz-body > .left.sidebar .site-tag-index { display: none; }
+  .page > #quartz-body > .left.sidebar .site-tag-index-mobile {
+    display: block;
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 0;
+    border: 1px solid var(--lightgray);
+    border-radius: 0.65rem;
+    background: var(--light);
+    overflow: hidden;
+  }
+  .site-tag-index-mobile > summary {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0.9rem;
+    font-weight: 650;
+    color: var(--dark);
+    list-style: none;
+    min-height: 44px;
+  }
+  .site-tag-index-mobile > summary::-webkit-details-marker { display: none; }
+  .site-tag-index-mobile > summary::after {
+    content: "⌄";
+    margin-left: 0.5rem;
+    color: var(--secondary);
+  }
+  .site-tag-index-mobile[open] > summary::after { transform: rotate(180deg); }
+  .site-tag-index-mobile__total {
+    margin-left: auto;
+    padding-inline: 0.45rem;
+    border-radius: 1rem;
+    background: var(--highlight);
+    font-size: 0.8rem;
+    color: var(--darkgray);
+  }
+  .site-tag-index-mobile nav { padding: 0 0.7rem 0.85rem; }
+  .site-tag-index-mobile .site-tag-index__list {
+    max-height: min(42vh, 360px);
+    overflow-y: auto;
+  }
+  .site-tag-index-mobile .site-tag-index__tag {
+    min-height: 42px;
+    align-items: center;
+  }
+
+  .page > #quartz-body > .center,
+  .page > #quartz-body > .center > article,
+  .page > #quartz-body > .page-header {
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  .page > #quartz-body .page-header h1 {
+    overflow-wrap: anywhere;
+  }
+  .page > #quartz-body > .right.sidebar { display: none; }
+
+  /* Long mathematical displays scroll on their own, not the entire page. */
+  .katex-display, .math.math-display, .table-container, pre {
+    max-width: 100%;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+  .katex-display > .katex {
+    display: inline-block;
+    min-width: max-content;
+    text-align: left;
+  }
+  article img, article svg { max-width: 100%; height: auto; }
+  article { font-size: 1rem; line-height: 1.65; }
+
+  .math-series-nav { padding: 0.8rem; }
+  .math-series-nav__steps { gap: 0.35rem; }
+  .math-series-nav__step { width: 2.35rem; height: 2.35rem; }
+  .math-series-nav__links { justify-content: space-between; }
+  .math-series-nav__overview { order: 3; flex-basis: 100%; text-align: center; }
+}
