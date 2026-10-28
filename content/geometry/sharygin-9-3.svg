@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 520" role="img" aria-labelledby="title desc">
+<title id="title">Окружность и эксцентральный треугольник</title>
+<desc id="desc">Треугольник ABC вписан в окружность. F, E, D — эксцентры; I — инцентр, O — центр описанной окружности, V — точка Бевана.</desc>
+<rect width="620" height="520" fill="#fcfaf7"/>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M42 155 L530 38 L312 479 Z" stroke="#6d7078" stroke-width="3"/>
+<circle cx="287" cy="229" r="142" stroke="#8e969c" stroke-width="3"/>
+<path d="M197 119 L161 336 L429 336 Z" stroke="#596c7c" stroke-width="3.5"/>
+<path d="M42 155 L310 235 M530 38 L310 235 M312 479 L312 336" stroke="#c74d45" stroke-width="3.5"/>
+<path d="M161 336 H429 M245 208 L310 235 L312 336" stroke="#78929b" stroke-width="2" stroke-dasharray="6 6"/>
+<path d="M197 119 L312 336" stroke="#879098" stroke-width="2"/>
+</g>
+<g fill="#2d79b1" stroke="#25455c" stroke-width="2.5">
+<circle cx="197" cy="119" r="8"/><circle cx="161" cy="336" r="8"/><circle cx="429" cy="336" r="8"/>
+</g>
+<g fill="#707781" stroke="#333b45" stroke-width="2">
+<circle cx="42" cy="155" r="7"/><circle cx="530" cy="38" r="7"/><circle cx="312" cy="479" r="7"/>
+<circle cx="287" cy="229" r="6"/><circle cx="310" cy="235" r="6"/><circle cx="245" cy="208" r="6"/>
+</g>
+<g font-size="23" font-family="Georgia,serif" fill="#254d6a">
+<text x="206" y="107">A</text><text x="144" y="325">B</text><text x="439" y="331">C</text>
+</g>
+<g font-size="20" font-family="Georgia,serif" fill="#555d64">
+<text x="20" y="144">F</text><text x="537" y="35">E</text><text x="320" y="499">D</text>
+<text x="266" y="218">O</text><text x="319" y="254">V</text><text x="225" y="198">I</text>
+</g>
+</svg>
