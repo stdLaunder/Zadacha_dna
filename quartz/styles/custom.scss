@@ -64,3 +64,58 @@
     font-size: 0.88rem;
   }
 }
+
+/* Navigation shared by every multi-part mathematical article. */
+.math-series-nav {
+  border: 1px solid var(--lightgray);
+  border-radius: 0.7rem;
+  padding: 1rem;
+  margin: 1.2rem 0;
+  background: var(--light);
+  font-size: 0.9rem;
+
+  &__header, &__links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  &__title { font-weight: 700; }
+  &__counter { color: var(--gray); font-size: 0.85rem; }
+  &__steps {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 0.55rem;
+    padding: 0;
+    margin: 0.95rem 0;
+  }
+  &__steps li { margin: 0; }
+  &__step {
+    display: grid;
+    place-items: center;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    border: 1px solid var(--lightgray);
+    color: var(--darkgray);
+    background: var(--light);
+    text-decoration: none;
+    font-variant-numeric: tabular-nums;
+  }
+  &__step:hover { border-color: var(--secondary); }
+  &__step[aria-current="page"] {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    color: var(--light);
+    font-weight: 700;
+  }
+  &__links {
+    gap: 1rem;
+    font-size: 0.84rem;
+    border-top: 1px solid var(--lightgray);
+    padding-top: 0.8rem;
+  }
+  &__overview { white-space: nowrap; }
+}
