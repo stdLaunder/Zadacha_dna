@@ -1,27 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 520" role="img" aria-labelledby="title desc">
-<title id="title">Окружность и эксцентральный треугольник</title>
-<desc id="desc">Треугольник ABC вписан в окружность. F, E, D — эксцентры; I — инцентр, O — центр описанной окружности, V — точка Бевана.</desc>
-<rect width="620" height="520" fill="#fcfaf7"/>
-<g fill="none" stroke-linecap="round" stroke-linejoin="round">
-<path d="M42 155 L530 38 L312 479 Z" stroke="#6d7078" stroke-width="3"/>
-<circle cx="287" cy="229" r="142" stroke="#8e969c" stroke-width="3"/>
-<path d="M197 119 L161 336 L429 336 Z" stroke="#596c7c" stroke-width="3.5"/>
-<path d="M42 155 L310 235 M530 38 L310 235 M312 479 L312 336" stroke="#c74d45" stroke-width="3.5"/>
-<path d="M161 336 H429 M245 208 L310 235 L312 336" stroke="#78929b" stroke-width="2" stroke-dasharray="6 6"/>
-<path d="M197 119 L312 336" stroke="#879098" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="30 58 520 530" role="img" aria-labelledby="title desc">
+<title id="title">Задача 9.3 Шарыгина: треугольник и точка Бевана</title>
+<desc id="desc">Треугольник ABC вписан в окружность центра O. D, E, F — центры вневписанных окружностей, I — инцентр, V — точка Бевана, причём V=2O-I. Треугольник DEF имеет центр описанной окружности V.</desc>
+<rect x="30" y="58" width="520" height="530" fill="#fbfaf8"/>
+<g stroke-linecap="round" stroke-linejoin="round" fill="none">
+  <path d="M78.673 207.593 L501.327 102.596 L322.651 542.955 Z" stroke="#89919b" stroke-width="2.7"/>
+  <circle cx="290" cy="283.309" r="128.214" stroke="#a4aab1" stroke-width="2.6"/>
+  <path d="M230 170 L175 340 L405 340 Z" stroke="#536678" stroke-width="3.4"/>
+  <path d="M322.651 286.527 L78.673 207.593 M322.651 286.527 L501.327 102.596 M322.651 286.527 L322.651 542.955" stroke="#cc6057" stroke-width="2.2"/>
+  <path d="M257.349 280.091 L322.651 286.527" stroke="#566975" stroke-width="2.5" stroke-dasharray="5 5"/>
 </g>
-<g fill="#2d79b1" stroke="#25455c" stroke-width="2.5">
-<circle cx="197" cy="119" r="8"/><circle cx="161" cy="336" r="8"/><circle cx="429" cy="336" r="8"/>
+<g fill="#2e77ad" stroke="#1b405c" stroke-width="1.8">
+ <circle cx="230" cy="170" r="6"/><circle cx="175" cy="340" r="6"/><circle cx="405" cy="340" r="6"/>
 </g>
-<g fill="#707781" stroke="#333b45" stroke-width="2">
-<circle cx="42" cy="155" r="7"/><circle cx="530" cy="38" r="7"/><circle cx="312" cy="479" r="7"/>
-<circle cx="287" cy="229" r="6"/><circle cx="310" cy="235" r="6"/><circle cx="245" cy="208" r="6"/>
+<g fill="#7e8790" stroke="#444b56" stroke-width="1.8">
+ <circle cx="322.651" cy="542.955" r="6"/><circle cx="501.327" cy="102.596" r="6"/><circle cx="78.673" cy="207.593" r="6"/>
 </g>
-<g font-size="23" font-family="Georgia,serif" fill="#254d6a">
-<text x="206" y="107">A</text><text x="144" y="325">B</text><text x="439" y="331">C</text>
+<g fill="#344d62" stroke="#172e3b" stroke-width="1.4">
+ <circle cx="257.349" cy="280.091" r="4.6"/><circle cx="290" cy="283.309" r="4.6"/><circle cx="322.651" cy="286.527" r="4.6"/>
 </g>
-<g font-size="20" font-family="Georgia,serif" fill="#555d64">
-<text x="20" y="144">F</text><text x="537" y="35">E</text><text x="320" y="499">D</text>
-<text x="266" y="218">O</text><text x="319" y="254">V</text><text x="225" y="198">I</text>
+<g font-family="Georgia, 'Times New Roman', serif" font-size="18" paint-order="stroke" stroke="#fbfaf8" stroke-width="4" stroke-linejoin="round">
+ <g fill="#226796"><text x="227" y="157">A</text><text x="157" y="356">B</text><text x="413" y="350">C</text></g>
+ <g fill="#626a75"><text x="328" y="567">D</text><text x="510" y="97">E</text><text x="58" y="203">F</text></g>
+ <g fill="#314d64"><text x="244" y="269">I</text><text x="285" y="267">O</text><text x="334" y="284">V</text></g>
 </g>
 </svg>
