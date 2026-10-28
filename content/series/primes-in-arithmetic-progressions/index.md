@@ -26,4 +26,4 @@ tags:
 
 Цикл завершён.
 
-[Ко всем заметкам сайта](../../index) · [Telegram-канал «Задача дня»](https://t.me/zadacha_dna)
+[Ко всем заметкам сайта](../../index.md) · [Telegram-канал «Задача дня»](https://t.me/zadacha_dna)
