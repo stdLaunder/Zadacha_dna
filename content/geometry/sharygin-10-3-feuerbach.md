@@ -53,6 +53,6 @@ $$
 
 ---
 
-[Telegram-канал «Задача дня»](https://t.me/zadacha_dna) · [Условие задачи из архива олимпиады](https://maths.bg/sharygin-2026-final-10-3).
+[Telegram-канал «Задача дня»](https://t.me/zadacha_dna).
 
 **Ещё по теме:** [«Самое красивое решение задачи 9.3 олимпиады Шарыгина»](sharygin-9-3-cosines-exradii).
