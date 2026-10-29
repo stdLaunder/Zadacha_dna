@@ -226,3 +226,11 @@
   .math-series-nav__links { justify-content: space-between; }
   .math-series-nav__overview { order: 3; flex-basis: 100%; text-align: center; }
 }
+
+/* Telegram comment integration */
+.telegram-comments { max-width:100%; min-width:0; margin:2rem 0; padding:1rem 0; border-top:1px solid var(--lightgray); }
+.telegram-comments h2 { margin-top:0.2rem; }
+.telegram-comments__intro,.telegram-comments__hint { color:var(--gray); font-size:0.9rem; }
+.telegram-comments__widget { max-width:100%; min-height:5rem; overflow:hidden; }
+.telegram-comments__widget iframe { max-width:100%; }
+.telegram-comments__link { display:inline-block; margin-top:0.8rem; }
