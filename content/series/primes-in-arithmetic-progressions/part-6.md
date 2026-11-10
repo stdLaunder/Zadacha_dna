@@ -7,6 +7,7 @@ seriesPart: 6
 seriesTotal: 6
 seriesHasAnnouncement: true
 seriesIndex: "series/primes-in-arithmetic-progressions/index"
+telegramDiscussion: "zadacha_dna/797"
 tags:
   - аналитическая-теория-чисел
   - теория-чисел

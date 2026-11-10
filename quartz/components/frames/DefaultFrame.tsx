@@ -2,6 +2,7 @@ import { PageFrame, PageFrameProps } from "./types"
 import HeaderConstructor from "../Header"
 import TagIndex from "../TagIndex"
 import SeriesNavigation from "../SeriesNavigation"
+import TelegramComments from "../TelegramComments"
 
 const Header = HeaderConstructor()
 
@@ -46,6 +47,7 @@ export const DefaultFrame: PageFrame = {
           </div>
           <SeriesNavigation {...componentData} />
           <Content {...componentData} />
+          <TelegramComments {...componentData} />
           <SeriesNavigation {...componentData} />
           <hr />
           <div class="page-footer">
